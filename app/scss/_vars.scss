@@ -1,0 +1,39 @@
+$blue:#7d9eb6;
+$black:#313131;
+
+
+
+%title {
+    font-size: 62px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+%btn {
+  
+
+
+    border: 1px solid $blue;
+    color: $blue;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: auto;
+    padding: 0px 30px 0px 37px;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+        transition: 0.15s;
+    }
+
+
+}
