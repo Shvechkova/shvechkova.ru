@@ -47,6 +47,13 @@ git push
 
 Код MODX- и WordPress-проектов (flower, vet, belayabereza и др.) лежит в приватном репозитории [shvechkova-archive](https://github.com/Shvechkova/shvechkova-archive).
 
+## Стили
+
+Сайт подключает `css/style.min.css`. Исходники в `scss/` **устарели** относительно него (например, правил для `max-width: 1300px` в SCSS нет), поэтому правки вносятся прямо в `css/style.min.css`. Правки после переезда собраны в конце файла под комментарием «Правки после переезда на GitHub Pages»:
+
+- размытие фона под закреплённой шапкой (`.header::before` с `backdrop-filter`);
+- блок описания проекта (`.container__content`) на ширине 877–1300px больше не заходит под иконки соцсетей.
+
 ## Известные мелочи (были и на старом хостинге)
 
 - `DIA/index.html` подключает `/bower_components/jquery/dist/jquery.js`, которого нет; jQuery всё равно грузится с CDN.

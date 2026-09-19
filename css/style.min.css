@@ -2197,3 +2197,32 @@ textarea {
     margin-top: 40px;
   }
 }
+
+/* === Правки после переезда на GitHub Pages (2026-09) === */
+
+/* Размытие фона под закреплённой шапкой: контент, прокручиваясь под ней, размывается */
+.header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 99;
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+@media (max-width: 600px) {
+  .header::before {
+    height: 50px;
+  }
+}
+
+/* Описание проекта на 877–1300px: не заходить под закреплённые иконки соцсетей (left: 20px, 40px шириной) */
+@media (min-width: 877px) and (max-width: 1300px) {
+  .container__content {
+    width: 80%;
+    padding: 30px 0;
+  }
+}
