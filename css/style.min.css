@@ -2233,3 +2233,70 @@ html.is-scrolled .header::before {
     padding: 30px 0;
   }
 }
+
+/* Картинка вместо видео на странице проекта не растягивается */
+.work__img img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Блок книжного клуба на главной */
+.club {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.club .about__button {
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .club .container {
+    width: auto;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  .club .about__wrapper {
+    margin-top: 70px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .club .about__img {
+    width: 110px;
+    margin: 0 0 8px 10px;
+  }
+  .club .about__img img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  .club .about__button {
+    width: auto;
+    display: inline-flex;
+    margin: 10px auto 5px;
+  }
+  .club .about__items {
+    box-sizing: border-box;
+  }
+}
+.club__side {
+  flex-direction: column;
+  gap: 12px;
+}
+.club__side img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+@media (max-width: 600px) {
+  .club .about__img.club__side {
+    float: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .club .about__img.club__side img {
+    border-radius: 8px;
+  }
+}
