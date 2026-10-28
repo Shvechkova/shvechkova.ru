@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Анастасия Швечкова — backend / fullstack Python-разработчик</title>
-  <meta name="description"
-    content="Python, web backend developer разработчик Анастасия Швечкова Самара. Швечка,Shvechka, Shvechkova">
-  <meta name="keywords"
-    content="Python,backend developer,разработчик,Анастасия Швечкова,Самара, Швечка,Shvechka, Shvechkova">
+  <title>Сервис внутренней бухгалтерии на Django — Анастасия Швечкова</title>
+  <meta name="description" content="Сервис учёта доходов и расходов, счетов и статусов оплат с автопереносом бюджета на новый месяц. Разработка с нуля: Python, Django, DRF, Celery, MySQL, VPS и Nginx.">
+  <meta name="keywords" content="сервис бухгалтерии, автоматизация учёта, Django, DRF, Celery, MySQL, Python, проектирование БД, Nginx, VPS">
+  <meta name="author" content="Анастасия Швечкова">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://shvechkova.ru/proj-byx.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#262626">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Анастасия Швечкова — Python-разработчик">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Сервис внутренней бухгалтерии на Django — Анастасия Швечкова">
+  <meta property="og:description" content="Сервис учёта доходов и расходов, счетов и статусов оплат с автопереносом бюджета на новый месяц. Разработка с нуля: Python, Django, DRF, Celery, MySQL, VPS и Nginx.">
+  <meta property="og:url" content="https://shvechkova.ru/proj-byx.html">
+  <meta property="og:image" content="https://shvechkova.ru/images/og/proj-byx.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Сервис внутренней бухгалтерии и автоматизации учёта">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Сервис внутренней бухгалтерии на Django — Анастасия Швечкова">
+  <meta name="twitter:description" content="Сервис учёта доходов и расходов, счетов и статусов оплат с автопереносом бюджета на новый месяц. Разработка с нуля: Python, Django, DRF, Celery, MySQL, VPS и Nginx.">
+  <meta name="twitter:image" content="https://shvechkova.ru/images/og/proj-byx.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://shvechkova.ru/proj-byx.html#work",
+      "name": "Сервис внутренней бухгалтерии и автоматизации учёта",
+      "headline": "Сервис внутренней бухгалтерии и автоматизации учёта",
+      "description": "Сервис учёта доходов и расходов, счетов и статусов оплат с автопереносом бюджета на новый месяц. Разработка с нуля: Python, Django, DRF, Celery, MySQL, VPS и Nginx.",
+      "url": "https://shvechkova.ru/proj-byx.html",
+      "image": "https://shvechkova.ru/images/2024-07-07_16-49-47.jpg",
+      "inLanguage": "ru",
+      "keywords": "сервис бухгалтерии, автоматизация учёта, Django, DRF, Celery, MySQL, Python, проектирование БД, Nginx, VPS",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://shvechkova.ru/#person",
+        "name": "Анастасия Швечкова",
+        "url": "https://shvechkova.ru/"
+      },
+      "isPartOf": {
+        "@id": "https://shvechkova.ru/project.html#collection"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://shvechkova.ru/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Проекты",
+          "item": "https://shvechkova.ru/project.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сервис внутренней бухгалтерии и автоматизации учёта",
+          "item": "https://shvechkova.ru/proj-byx.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@400;500;600;700&family=Raleway:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -59,7 +130,8 @@
               <li class="menu__list-item"><a class="menu__list-item-linc" href="index.html#s2">ОБО МНЕ</a></li>
               <li class="menu__list-item "><a class="  menu__list-item-linc" href="index.html#s3">НАВЫКИ</a></li>
               <li class="menu__list-item"><a class="menu__list-item-linc"
-                  href="https://shvechkova.ru/project.html">ПОРТФОЛИО</a></li>
+                  href="project.html">ПОРТФОЛИО</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-linc" href="resume.html">РЕЗЮМЕ</a></li>
               <li class="menu__list-item"><a class="menu__list-item-linc" href="index.html#s5">КОНТАКТЫ</a></li>
             </ul>
           </nav>
@@ -67,13 +139,13 @@
       </div>
 
       <div class="social">
-        <a target="_blanc" href="https://vk.com/anastasiashvechkova" class="social__item"> <img src="images/vko.svg" alt
+        <a target="_blank" rel="noopener" href="https://vk.com/anastasiashvechkova" class="social__item"> <img src="images/vko.svg" alt="ВКонтакте"
             class="social__img"> </a>
-        <a target="_blanc" href="https://t.me/Shvechkaa" class="social__item">
-          <img src="images/akar-icons_telegram-fill.svg" alt class="social__img">
+        <a target="_blank" rel="noopener" href="https://t.me/Shvechkaa" class="social__item">
+          <img src="images/akar-icons_telegram-fill.svg" alt="Telegram" class="social__img">
         </a>
-        <a target="_blanc" href="https://www.instagram.com/shvechka/" class="social__item"> <img src="images/insta.svg"
-            alt class="social__img"> </a>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/shvechka/" class="social__item"> <img src="images/insta.svg"
+            alt="Instagram" class="social__img"> </a>
       </div>
   </header>
 
@@ -88,7 +160,7 @@
             <div class="work">
               <div class="work__botton">
                 <a class="work__botton-a" href="project.html">
-                  <img src="images/bi_arrow-left.svg" alt>
+                  <img src="images/bi_arrow-left.svg" alt="">
                   <div class="work__botton-title"> К списку проектов</div>
                 </a>
               </div>
@@ -102,8 +174,7 @@
 
               <div class="work__img">
               
-                <video muted="muted" autoplay="autoplay" loop="loop"
-                  src="images/bandicam 2024-07-07 15-01-08-081 (online-video-cutter.com).mp4"></video>
+                <video autoplay muted loop playsinline preload="metadata" poster="images/posters/2024-07-07-15-01-08-081.jpg" src="images/bandicam 2024-07-07 15-01-08-081 (online-video-cutter.com).mp4"></video>
 
               </div>
             </div>
@@ -149,7 +220,7 @@
                   Данный проект был реализован мной как полноценное решение для автоматизации финансового учёта. На нём
                   я выступала в роли бэкенд-разработчика, архитектора системы и проектировщика базы данных. Также
                   самостоятельно занималась настройкой серверной части (VPS/Linux, Nginx) и реализацией
-                  интерфейса с использованием JavaScript и вертка по макетам.
+                  интерфейса с использованием JavaScript и вёрсткой по макетам.
 
 
                 </div>
@@ -191,7 +262,7 @@
 
               </div>
               <!-- <div class="">
-                <img src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt class="">
+                <img src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt="Схема архитектуры системы: бэкенд на Django и DRF, сайт, Битрикс24, 1С:УНФ, внешние API, PostgreSQL" class="">
 
               </div> -->
 
@@ -229,9 +300,6 @@
     });
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.min.js"></script>
 
 </body>

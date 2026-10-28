@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Анастасия Швечкова — backend / fullstack Python-разработчик</title>
-  <meta name="description"
-    content="Python, web backend developer разработчик Анастасия Швечкова Самара. Швечка,Shvechka, Shvechkova">
-  <meta name="keywords"
-    content="Python,backend developer,разработчик,Анастасия Швечкова,Самара, Швечка,Shvechka, Shvechkova">
+  <title>ERP-система и B2B-интернет-магазин на Django — Анастасия Швечкова</title>
+  <meta name="description" content="ERP-подобная система и интернет-магазин для инжиниринговой компании: Django, DRF, Celery, PostgreSQL, интеграции с 1С:УНФ, Битрикс24 и API 6 поставщиков. Более 1500 часов.">
+  <meta name="keywords" content="ERP на Django, B2B интернет-магазин, интеграция 1С:УНФ, Битрикс24, DRF, Celery, Redis, PostgreSQL, dadata, парсинг XLSX CSV, Python">
+  <meta name="author" content="Анастасия Швечкова">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://shvechkova.ru/proj-spec.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#262626">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Анастасия Швечкова — Python-разработчик">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="ERP-система и B2B-интернет-магазин на Django — Анастасия Швечкова">
+  <meta property="og:description" content="ERP-подобная система и интернет-магазин для инжиниринговой компании: Django, DRF, Celery, PostgreSQL, интеграции с 1С:УНФ, Битрикс24 и API 6 поставщиков. Более 1500 часов.">
+  <meta property="og:url" content="https://shvechkova.ru/proj-spec.html">
+  <meta property="og:image" content="https://shvechkova.ru/images/og/proj-spec.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ERP-система и интернет-магазин для инжиниринговой компании">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ERP-система и B2B-интернет-магазин на Django — Анастасия Швечкова">
+  <meta name="twitter:description" content="ERP-подобная система и интернет-магазин для инжиниринговой компании: Django, DRF, Celery, PostgreSQL, интеграции с 1С:УНФ, Битрикс24 и API 6 поставщиков. Более 1500 часов.">
+  <meta name="twitter:image" content="https://shvechkova.ru/images/og/proj-spec.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://shvechkova.ru/proj-spec.html#work",
+      "name": "ERP-система и интернет-магазин для инжиниринговой компании",
+      "headline": "ERP-система и интернет-магазин для инжиниринговой компании",
+      "description": "ERP-подобная система и интернет-магазин для инжиниринговой компании: Django, DRF, Celery, PostgreSQL, интеграции с 1С:УНФ, Битрикс24 и API 6 поставщиков. Более 1500 часов.",
+      "url": "https://shvechkova.ru/proj-spec.html",
+      "image": "https://shvechkova.ru/images/image-1.jpg",
+      "inLanguage": "ru",
+      "keywords": "ERP на Django, B2B интернет-магазин, интеграция 1С:УНФ, Битрикс24, DRF, Celery, Redis, PostgreSQL, dadata, парсинг XLSX CSV, Python",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://shvechkova.ru/#person",
+        "name": "Анастасия Швечкова",
+        "url": "https://shvechkova.ru/"
+      },
+      "isPartOf": {
+        "@id": "https://shvechkova.ru/project.html#collection"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://shvechkova.ru/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Проекты",
+          "item": "https://shvechkova.ru/project.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ERP-система и интернет-магазин для инжиниринговой компании",
+          "item": "https://shvechkova.ru/proj-spec.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@400;500;600;700&family=Raleway:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -59,7 +130,8 @@
               <li class="menu__list-item"><a class="menu__list-item-linc" href="index.html#s2">ОБО МНЕ</a></li>
               <li class="menu__list-item "><a class="  menu__list-item-linc" href="index.html#s3">НАВЫКИ</a></li>
               <li class="menu__list-item"><a class="menu__list-item-linc"
-                  href="https://shvechkova.ru/project.html">ПОРТФОЛИО</a></li>
+                  href="project.html">ПОРТФОЛИО</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-linc" href="resume.html">РЕЗЮМЕ</a></li>
               <li class="menu__list-item"><a class="menu__list-item-linc" href="index.html#s5">КОНТАКТЫ</a></li>
             </ul>
           </nav>
@@ -67,13 +139,13 @@
       </div>
 
       <div class="social">
-        <a target="_blanc" href="https://vk.com/anastasiashvechkova" class="social__item"> <img src="images/vko.svg" alt
+        <a target="_blank" rel="noopener" href="https://vk.com/anastasiashvechkova" class="social__item"> <img src="images/vko.svg" alt="ВКонтакте"
             class="social__img"> </a>
-        <a target="_blanc" href="https://t.me/Shvechkaa" class="social__item">
-          <img src="images/akar-icons_telegram-fill.svg" alt class="social__img">
+        <a target="_blank" rel="noopener" href="https://t.me/Shvechkaa" class="social__item">
+          <img src="images/akar-icons_telegram-fill.svg" alt="Telegram" class="social__img">
         </a>
-        <a target="_blanc" href="https://www.instagram.com/shvechka/" class="social__item"> <img src="images/insta.svg"
-            alt class="social__img"> </a>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/shvechka/" class="social__item"> <img src="images/insta.svg"
+            alt="Instagram" class="social__img"> </a>
       </div>
   </header>
 
@@ -88,20 +160,20 @@
             <div class="work">
               <div class="work__botton">
                 <a class="work__botton-a" href="project.html">
-                  <img src="images/bi_arrow-left.svg" alt>
+                  <img src="images/bi_arrow-left.svg" alt="">
                   <div class="work__botton-title"> К списку проектов</div>
                 </a>
               </div>
             </div>
             <div class="work__items">
               <div class="work__title work__title2">
-                <h1>ERP-подобная система и интернет магазин для инжиниринговой компании
+                <h1>ERP-подобная система и интернет-магазин для инжиниринговой компании
 
                 </h1>
               </div>
 
               <div class="work__img">
-                <video muted="muted" autoplay="autoplay" loop="loop" src="images/m.mp4"></video>
+                <video autoplay muted loop playsinline preload="metadata" poster="images/posters/m.jpg" src="images/m.mp4"></video>
 
               </div>
             </div>
@@ -122,7 +194,7 @@
                 <div class="tech-elem">Celery + Redis - фоновая обработка</div>
                 <div class="tech-elem">PostgreSQL</div>
                 <div class="tech-elem">Проектирование БД</div>
-                <div class="tech-elem">развертывание на VPS/Linux,Nginx + Gunicorn</div>
+                <div class="tech-elem">развертывание на VPS/Linux, Nginx + Gunicorn</div>
                 <div class="tech-elem">Docker - для локальной разработки</div>
                 <div class="tech-elem">Git - управление версиями</div>
 
@@ -154,7 +226,7 @@
                 <div class="text_tech"><span>ERP-подобная система и интернет-магазин для инжиниринговой компании</span>
                 </div>
 
-                <div class="text_tech"><span>О проекте</span> Разработала и внедрила с нуля ERP-подобная систему и
+                <div class="text_tech"><span>О проекте</span> Разработала и внедрила с нуля ERP-подобную систему и
                   полноценный интернет-магазин для инжиниринговой компании с активным отделом продаж. Проект объединил
                   все ключевые бизнес-процессы: продажи, снабжение, склад, финансы, CRM и онлайн-торговлю, обеспечив
                   сквозную автоматизацию - от первого клика клиента до передачи заказа в 1С и отгрузки со склада.
@@ -220,7 +292,7 @@
 
                 <div class="text_tech"><span>Мой вклад</span> 
                   <ul>  
-                    <li> Анализ бизнес-процессов и проектирование технических требований с нуля: проводила интервью с заказчиком и ключевыми пользователями, документировала процессы от запроса до отгрузки, выявляла узкие места и формировалала детальные спецификации для разработки.</li>
+                    <li> Анализ бизнес-процессов и проектирование технических требований с нуля: проводила интервью с заказчиком и ключевыми пользователями, документировала процессы от запроса до отгрузки, выявляла узкие места и формировала детальные спецификации для разработки.</li>
                     <li> Проектирование архитектуры системы и структуры базы данных - с учётом масштабируемости, интеграций и долгосрочных бизнес-целей.</li>
                     <li> Разработка бэкенда на Python / Django: API, бизнес-логика, документооборот, система уведомлений и логирования.</li>
                     <li> Настройка сервера (VPS, Linux, Nginx, Gunicorn), резервное копирование (WAL-G), организация окружения через Docker.</li>
@@ -244,14 +316,14 @@
                 </div>
 
                 <div class="text_tech">
-                  Проект живой и развивается: добавляются новые функции, интеграции и улучшения.Система масштабируется под новые поставщиков и бизнес-правила.
-                  <span>это не просто сайт, а единая цифровая экосистема: от интернет-магазина до ERP и 1С.</span> 
+                  Проект живой и развивается: добавляются новые функции, интеграции и улучшения. Система масштабируется под новых поставщиков и бизнес-правила.
+                  <span>Это не просто сайт, а единая цифровая экосистема: от интернет-магазина до ERP и 1С.</span> 
                 </div>
 
 
               </div>
               <div class="">
-                <img src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt class="">
+                <img loading="lazy" decoding="async" width="3809" height="1868" src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt="Схема архитектуры системы: бэкенд на Django и DRF, сайт, Битрикс24, 1С:УНФ, внешние API, PostgreSQL" class="">
 
               </div>
               
@@ -370,7 +442,7 @@
                 <div class="work__img" style="
     height: auto;
 ">
-                  <img src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt>
+                  <img src="images/49ac8dfc5bc9d3dd4f3e20a5c4310721.jpg" alt="Схема архитектуры системы: бэкенд на Django и DRF, сайт, Битрикс24, 1С:УНФ, внешние API, PostgreSQL">
 
                 </div>
                 <h2> <br><span>Разрабатываемая система </span>в первую очередь агрегирует данные о товарах - получает и
@@ -468,9 +540,6 @@
     });
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.min.js"></script>
 
 </body>

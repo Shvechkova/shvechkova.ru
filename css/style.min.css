@@ -2300,3 +2300,112 @@ html.is-scrolled .header::before {
     border-radius: 8px;
   }
 }
+
+/* Мобильная версия и вёрстка страниц проектов (2026-10) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+/* Плашки технологий переносятся на новую строку, а не уезжают за правый край */
+.content__them {
+  flex-wrap: wrap;
+}
+.tech-elem,
+.content__them p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.text_tech,
+.content__text,
+.content__about,
+.portfolio__text,
+.work__title {
+  overflow-wrap: break-word;
+}
+.container__content > *,
+.tech-body,
+.thech_text_w,
+.work__items {
+  min-width: 0;
+  max-width: 100%;
+}
+/* Видео и обложка не выходят за рамку блока */
+.work__img video {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+@media (min-width: 601px) {
+  /* Высота блока не больше половины ширины: ролики ~2:1 помещаются целиком */
+  .work__img {
+    height: min(70vh, 40vw);
+  }
+  /* Длинный заголовок проекта в две строки — по центру и в пределах рамки */
+  .work__title {
+    max-width: 80vw;
+    text-align: center;
+  }
+}
+/* Обложка без видео: подрезаем пустой низ картинки */
+.work__img.work__img--cover {
+  height: auto;
+}
+.work__img.work__img--cover img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 5 / 2;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+/* Заголовок «Все проекты» не заезжает под закреплённую шапку */
+.portfolio_title.portfolio_title--page {
+  margin-top: 100px;
+}
+@media (max-width: 876px) {
+  .portfolio_title.portfolio_title--page {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .tech-body {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .text_tech {
+    font-size: 20px;
+  }
+  .content__them {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .work__img.work__img--cover img {
+    max-height: none;
+    width: 100%;
+  }
+}
+
+/* Картинки с атрибутами width/height: атрибуты задают только пропорции, размеры по-прежнему из CSS */
+:where(img[width][height]) {
+  height: auto;
+}
+.work__img img[width] {
+  width: auto;
+}
+/* Карточки портфолио с lazy-загрузкой: место под картинку резервируется заранее (высота 240px, ширина по пропорциям) */
+@media (min-width: 601px) {
+  .portfolio__img[width][height] {
+    height: 240px;
+    width: auto;
+  }
+}
+
+/* Пункты меню не переносятся по словам */
+.menu__list-item-linc {
+  white-space: nowrap;
+}
