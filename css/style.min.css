@@ -2409,3 +2409,164 @@ html {
 .menu__list-item-linc {
   white-space: nowrap;
 }
+
+/* Редизайн главной: первый экран */
+.hero__name {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: #f2f2f2;
+  margin: 10px 20px 0 0;
+}
+.hero__cta {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 24px 20px 0 0;
+}
+.hero__btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #f2f2f2;
+  padding: 12px 28px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  transition: 0.3s;
+}
+.hero__btn:hover {
+  border-color: #1d1338;
+  background-color: #1d1338;
+  color: #fff;
+}
+.hero__btn--main {
+  background: #1d1338;
+  border-color: #1d1338;
+}
+.hero__btn--main:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #1d1338;
+}
+.fullscreen_title-arrow {
+  height: 80px;
+  margin-top: 30px;
+}
+.logo1 {
+  position: relative;
+  z-index: 1;
+  width: 62%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+/* Редизайн главной: портфолио */
+.portfolio_title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.portfolio__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  justify-content: center;
+  gap: 28px 48px;
+}
+.portfolio__item {
+  padding: 0;
+}
+.portfolio__img {
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(29, 19, 56, 0.35);
+}
+.portfolio__img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px rgba(29, 19, 56, 0.45);
+}
+.portfolio__text {
+  font-size: 20px;
+}
+
+/* Редизайн главной: контакты */
+.contact2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 0 16px;
+  text-align: center;
+}
+.contact2__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  color: #f2f2f2;
+  line-height: 1;
+}
+.contact2__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: #f2f2f2;
+  max-width: 640px;
+}
+.contact2__cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+.contact2__social {
+  display: flex;
+  gap: 24px;
+}
+.contact2__social img {
+  width: 48px;
+  transition: 0.3s;
+}
+.contact2__social img:hover {
+  transform: scale(1.15);
+}
+
+@media (orientation: portrait), (max-width: 876px) {
+  .hero__name {
+    margin: 10px 0 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero__cta {
+    justify-content: center;
+    margin: 20px 0 0;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: minmax(0, 520px);
+    padding: 0 16px;
+  }
+}
+@media (max-width: 600px) {
+  .hero__btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .contact2__title {
+    font-size: 48px;
+  }
+  .contact2__text {
+    font-size: 17px;
+  }
+  .contact2 .hero__btn {
+    font-size: 14px;
+  }
+}
