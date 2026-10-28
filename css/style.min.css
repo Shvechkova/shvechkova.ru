@@ -2555,3 +2555,109 @@ html {
     font-size: 14px;
   }
 }
+
+/* Редизайн главной: навыки — стеклянные карточки и плашки технологий */
+.skills .skills__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: none;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.skills .skills__items-wrapper {
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
+.skills .skills__item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  align-items: start;
+  gap: 18px;
+  padding: 24px 26px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  border-radius: 28px;
+  box-shadow: 0 16px 40px rgba(29, 19, 56, 0.18);
+  backdrop-filter: blur(6px);
+}
+.skills .skills__item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 46px rgba(29, 19, 56, 0.28);
+}
+.skills .skills__imgs {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.skills .skills__img {
+  width: 32px;
+  height: 32px;
+}
+.skills .skills__item-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 0 0 12px;
+}
+.skills .skills__text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  background: none;
+  font-size: 16px;
+}
+.skills .skills__text p {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(29, 19, 56, 0.55);
+  color: #fff;
+  line-height: 1.3;
+}
+@media (max-width: 876px) {
+  .skills .skills__wrapper {
+    grid-template-columns: minmax(0, 560px);
+    justify-content: center;
+    gap: 14px;
+    padding: 0 16px;
+  }
+  .skills .skills__item {
+    grid-template-columns: 44px 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+  .skills .skills__item:hover {
+    transform: none;
+  }
+  .skills .skills__imgs {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  .skills .skills__img {
+    width: 26px;
+    height: 26px;
+  }
+  .skills .skills__item-title {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .skills .skills__text {
+    gap: 6px;
+    font-size: 13px;
+  }
+  .skills .skills__text p {
+    padding: 4px 10px;
+  }
+}
