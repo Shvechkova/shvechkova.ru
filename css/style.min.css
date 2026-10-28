@@ -2661,3 +2661,14 @@ html {
     padding: 4px 10px;
   }
 }
+
+/* Стык портфолио и клуба: воздух под кнопкой и плавный переход цвета */
+.portfolio {
+  height: auto;
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
+.club {
+  background: linear-gradient(180deg, #c850c0 0%, #4158d0 50%, #c850c0 100%);
+  padding: 60px 0;
+}
