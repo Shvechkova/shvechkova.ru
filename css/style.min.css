@@ -2452,21 +2452,6 @@ html {
   height: 80px;
   margin-top: 30px;
 }
-.logo1 {
-  position: relative;
-  z-index: 1;
-  width: 62%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.hero__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 20%;
-}
-
 /* Редизайн главной: портфолио */
 .portfolio_title {
   margin-top: 100px;
